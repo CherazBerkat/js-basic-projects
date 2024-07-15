@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+        alt="freeCodeCamp Logo"
+        style="margin: 25px; height: 30px; width: 300px"
+      />
+      <h1>Pokemon Search App</h1>
+      <div id="card">
+        <label for="search-input" style="color: black; font-size: 20px"
+          >Search for Pokémon Name or ID:</label
+        >
+        <div style="margin: 15px 0">
+          <input
+            type="text"
+            id="search-input"
+            name="search-input"
+            style="height: 40px; padding-left: 10px; width: 200px"
+          />
+          <button
+            id="search-button"
+            style="
+              padding: 14px 0;
+              width: 80px;
+              border-radius: 20px;
+              text-align: center;
+              background-color: #7f21ab;
+              color: #f5f6f7;
+              border: none;
+              cursor: pointer;
+            "
+            onclick="search()"
+          >
+            Search
+          </button>
+        </div>
+        <div
+          style="
+            width: 100%;
+            background-color: #f0f1f7;
+            height: 350px;
+            margin-bottom: 10px;
+            padding: 10px 5px;
+          "
+        >
+          <div style="display: flex; flex-direction: row; gap: 15px">
+            <h2
+              id="pokemon-name"
+              style="
+                color: black;
+                margin: 0;
+                text-transform: uppercase;
+                font-size: 24px;
+              "
+            ></h2>
+            <p
+              id="pokemon-id"
+              style="color: black; margin: 0; font-size: 24px"
+            ></p>
+          </div>
+          <div
+            style="
+              margin: 10px 0;
+              display: flex;
+              flex-direction: row;
+              gap: 15px;
+            "
+          >
+            <p id="weight" style="color: black; margin: 0; font-size: 20px"></p>
+            <p id="height" style="color: black; margin: 0; font-size: 20px"></p>
+          </div>
+          <img
+            id="sprite"
+            src=""
+            alt="Pokemon Image"
+            style="width: 100%; height: 250px; display: none"
+          />
+          <div
+            id="types"
+            style="
+              display: flex;
+              flex-direction: row;
+              gap: 7px;
+              align-items: start;
+              padding: 10px 5px;
+            "
+          ></div>
+        </div>
+        <div id="tab">
+          <p><b>Base</b></p>
+          <p><b>Stats</b></p>
+          <p>HP:</p>
+          <p id="hp"></p>
+          <p>Attack:</p>
+          <p id="attack"></p>
+          <p>Defense:</p>
+          <p id="defense"></p>
+          <p>Sp. Attack:</p>
+          <p id="special-attack"></p>
+          <p>Ap. Defense</p>
+          <p id="special-defense"></p>
+          <p>Speed:</p>
+          <p id="speed"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

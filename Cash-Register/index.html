@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 style="font-size: 2.5rem">Cash Register Project</h1>
+      <div id="change-due" style="display: none"></div>
+      <label for="cash" style="font-size: 24px; margin-bottom: 10px"
+        >Enter cash from customer:</label
+      >
+      <input
+        type="number"
+        name="cash"
+        id="cash"
+        style="
+          width: 65%;
+          height: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+        "
+      />
+      <button
+        id="purchase-btn"
+        style="
+          cursor: pointer;
+          width: 100px;
+          height: 30px;
+          margin: 10px;
+          color: #0a0a23;
+          font-size: 18px;
+          font-weight: bold;
+          background-color: #feac32;
+          background-image: linear-gradient(#fecc4c, #ffac33);
+          border-color: #feac32;
+          border-width: 3px;
+        "
+        onclick="purchase()"
+      >
+        Purchase
+      </button>
+      <div style="width: 90%; margin-top: 20px; height: 400px">
+        <div
+          style="
+            height: 30px;
+            margin: 0 100px 0 60px;
+            padding: 10px;
+            background-color: #99c9ff;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              background-color: black;
+              text-align: center;
+              font-size: 20px;
+              height: 27px;
+              padding-top: 3px;
+            "
+            id="price"
+          ></div>
+        </div>
+        <div
+          style="
+            height: 30px;
+            margin: 0 240px 0 80px;
+            background-color: #99c9ff;
+          "
+        ></div>
+        <div
+          style="
+            background-color: #99c9ff;
+            border-radius: 40px 40px 0 0;
+            height: 260px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 20px;
+          "
+        >
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(3, 1fr);
+              gap: 5px;
+              width: 80px;
+              height: 80px;
+            "
+          >
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+          </div>
+          <div
+            style="
+              background-color: white;
+              height: 100%;
+              width: 200px;
+              padding: 10px 5px 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              font-size: 20px;
+            "
+            id="drawer"
+          ></div>
+        </div>
+        <div
+          style="
+            background-color: #99c9ff;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <p
+            style="
+              background-color: black;
+              height: 20px;
+              width: 20px;
+              border-radius: 20px;
+            "
+          ></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

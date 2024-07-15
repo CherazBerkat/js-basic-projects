@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>roman-numeral-converter</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+          alt="freeCodeCamp Logo"
+          style="margin-bottom: 20px; width: 262.5px; height: 30px"
+        />
+        <h1
+          style="
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 20px;
+            text-align: center;
+          "
+        >
+          Roman Numeral Converter
+        </h1>
+      </div>
+      <div id="converter">
+        <label
+          for="number"
+          style="margin-bottom: 10px; color: white; font-size: 24px"
+          ><b>Enter a Number:</b></label
+        >
+        <input type="number" name="number" id="number" min="1" />
+        <button id="convert-btn" onclick="converter()">Convert</button>
+      </div>
+      <div id="output" style="display: none"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1
+        style="
+          color: white;
+          font-weight: bold;
+          margin: 15px;
+          text-align: center;
+          width: 100%;
+        "
+      >
+        Telephone Number Validator
+      </h1>
+      <div id="phone">
+        <p
+          style="
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+          "
+        ></p>
+        <div
+          style="
+            background-color: #dfdfe2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+            height: 400px;
+            padding: 10px 0;
+          "
+        >
+          <label for="user-input" style="font-size: 16px; margin-bottom: 20px"
+            >Enter a Phone Number:</label
+          >
+          <input
+            type="text"
+            id="user-input"
+            name="user-input"
+            style="
+              width: 80%;
+              height: 20px;
+              font-size: 20px;
+              padding: 10px;
+              margin-bottom: 10px;
+              border: 1px solid black;
+              border-radius: 5px;
+              text-align: center;
+            "
+          />
+          <p
+            id="results-div"
+            style="color: rgb(77, 56, 0); font-size: 1.2rem; padding: 0 5px"
+          ></p>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+          "
+        >
+          <button id="check-btn" onclick="check()">check</button>
+          <button id="clear-btn" onclick="clearResults()">clear</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
